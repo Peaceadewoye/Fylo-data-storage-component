@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: hsl(229, 57%, 11%);
+  color: hsl(243, 100%, 93%);
+  margin: 10% 5%;
+  background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.topbottom {
+  border-radius: 12px;
+  background-color: hsl(228, 56%, 26%);
+  padding: 2.4rem;
+}
+
+
+
+/* FYLO STYLES */
+.fylo {
+  border-top-right-radius: 9rem;
+}
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.features {
+  background-color: hsl(229, 57%, 11%);
+  padding: 1rem;
+  margin-right: 5%;
+  border-radius: 12px;
+}
+
+
+
+
+
+
+/* STORAGE STYLES */
+.text {
+  color: hsl(243, 100%, 93%);
+  text-align: center;
+  font-size: 1rem;
+}
+#eight {
+  color: #fff;
+  font-weight: bold;
+}
+.bar-container {
+  margin: 1rem 0;
+  background-color: #14274e;
+  height: 1.2rem;
+  border-radius: 3rem;
+}
+.bar {
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 3rem;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 2px;
+  max-width: 81.5%;
+  position: relative;
+}
+.circle {
+  background-color: #fff;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-left: auto;
+  border-radius: 3rem;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.storage-size {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.storage {
+  margin-top: 18px;
+  position: relative;
+}
+.gb {
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 1.3rem 1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12px;
+}
+#left {
+  color: hsl(229, 7%, 55%);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-left: 0.3rem;
+  position: relative;
+  top: -4px;
+}
+
+@media (min-width: 966px) {
+  body {
+    margin: 0;
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  .flex-container {
+    position: relative;
+    top: -100px;
+    display: grid;
+    height: 100vh;
+    max-width: 70%;
+    margin: 0 auto;
+    align-content: center;
+    grid-template-columns: repeat(autofit, 1fr);
+    grid-gap: 2.5rem;
+    grid-template-areas:
+    "fylo storage"
+    ;
+  }
+  .fylo {
+    grid-area: fylo;
+  }
+  .storage {
+    height: 150px;
+    align-self: flex-end;
+    grid-area: storage;
+  }
+  .text {
+    text-align: left;
+  }
+  .gb {
+    position: absolute;
+    top: -45px;
+    transform: translateX(50%);
+  }
+}
+
+
+
+
+
+
+
+
+
+/*
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
